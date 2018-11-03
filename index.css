@@ -5,3 +5,7 @@
     text-align: center;
     transform: translateX(-7.3%)
 }
+
+footer {
+    display: block;
+}
