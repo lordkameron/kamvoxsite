@@ -1,149 +1,77 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>KamVox</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css">
-
-    <!-- BOOTSTRAP JUNK -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
 </head>
+<body>
 
-<body style="background-color:#8b9aa8;">
+    
 
-    <!-- Menu -->
-    <div class="menu">
-        <div class="container-fluid">
-            <center>
-                    <div class="logo">
-                        <a href="./index.html">                                <!-- Put <img> here when logo done -->
-                            <h1>KamVox</h1>
-                        </a>
-                    </div>
-                    <div class="subtitle">
-                        Voices for the outside of your head.
-                    </div>
-            
-                    <hr>
-            
-                    <div class="menuitem">
-                        <i>Voice Work</i>
-                        <ul>
-                            <li>
-                                <a href="./demo.html">Voice Demos</a>
-                            </li>
-                            <li>
-                                <a href="./resume.html">Resume</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="menuitem">
-                        <i>Poster Work</i>
-                        <ul>
-                            <li>
-                                <a href="./portfolio.html">Portfolio</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="menuitem">
-                        <i>Business Inquiries</i>
-                        <ul>
-                            <li>
-                                kam@kamvox.com
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/CasualKameron?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @CasualKameron</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                            </li>
-                        </ul>
-                    </div>
-                    </center>
-        </div>
-    </div>
-
-
-    <!-- Page Body -->
-    <div class="main">
-            <div class="container">
-
-                    <h2 style="color:#ffffff;">Recent Projects</h2>
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin:auto">
-            
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                    </ol>
-                      
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      
-                        <div class="item active">
-                            <img src="images/main_gb.png" alt="Ghostbusters IDW" style="width:100%;">
-                            <div class="carousel-caption">
-                                <a href="https://youtu.be/eB7TH6O484E"><h3>Ghostbusters IDW <small><b>Role: Peter Venkman</b></small></h3></a>
-                                <p>A motion comic adaptation of IDW's Ghostbusters comics</p>
-                            </div>
-                        </div>
-                      
-                        <div class="item">
-                            <img src="images/main_m.jpg" alt="Doctor Menace" style="width:100%;">
-                            <div class="carousel-caption">
-                                    <a href="https://youtu.be/njcydQCuUR8"><h3>Doctor Menace <small><b>Role: Nocturne</b></small></h3></a>
-                                    <p>An audio comedy following the life of the greatest scientist in the world.</p>
-                            </div>
-                        </div>
-                          
-                        <div class="item">
-                            <img src="images/main_hk.jpg" alt="The Hayseed Knight" style="width:100%;">
-                            <div class="carousel-caption">
-                                    <a href="https://sandramj.itch.io/the-hayseed-knight"><h3>The Hayseed Knight <small><b>Role: Elbar</b></small></h3></a>
-                                    <p>A visual novel focusing on the exploits and adventures of a one-eyed deer</p>
-                            </div>
-                        </div>
-            
-                        <div class="item">
-                                <img src="images/main_dk.jpg" alt="Dreamkeepers" style="width:100%;">
-                                <div class="carousel-caption">
-                                        <a href="https://youtu.be/96lXEd4DZAw"><h3>Dreamkeepers: The Movie <small><b>Role: Damon</b></small></h3></a>
-                                        <p>A motion comic adaptation of the popular Dreamkeepers webcomic</p>
-                                </div>
-                            </div>
-                        
-                    </div>
-                      
-                    <!-- Left and right controls -->
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    </div>
+    <ul class="sidenav" style="text-align:center;">
+        <div class="topper">
+            <h1>KAM VOX</h1>
+            <div class="subtitle">
+                Voices for the <i>outside</i> of your head.
             </div>
-    </div>
+            <hr>
+        </div>
+        <li><a class="active" href="#home">Voice Work</a></li>
+        <li><a href="#posters">Posters</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://twitter.com/CasualKameron?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-lang="en" data-show-count="false">Follow @CasualKameron</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>
+    </ul>
 
-    <!-- Footer -->
-    <div class="container-fluid">
-        <div class="footer">
-            Website made by Kameron
+    <div class="content">
+        <div class="container;" style="overflow:auto">
+
+            <div style="text-align:center;">
+            <!-- Introduction -->
+                <img src="images/self_kam1.JPG" style="border-radius: 20%; float:left">
+                <br>
+                <p>Kameron Watson is a Florida-based voice actor with training in contemporary and shakespearean theater.</p>
+                <button class="btn info" style="bottom: 0;">
+                    <a href="files/resume.pdf" style="text-decoration: none; color:#fff;">Resume</a>
+                </button>
+
+            <!-- Demos -->
+            <table style="max-width: 100; margin: 0 auto;">
+                <tr>
+                    <td>
+                        <audio controls>
+                            <source src="audio/AudSample.mp3" type="audio/mpeg">
+                        </audio>
+                    </td>
+                    <td>
+                        <h3>Vocal Sample</h3>
+                    </td>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+        <!-- Image Links -->
+        <div class="container" style="overflow:auto">
+        <div style="width: 100%;display: block; position: fixed; padding-top: 90px;">
+            <h1>Projects I've Worked On</h1>
+            <a href="https://youtu.be/eB7TH6O484E">
+                <img class="thumb" src="images/main_gb.png" alt="Ghostbusters IDW">
+            </a>
+            <a href="https://sandramj.itch.io/the-hayseed-knight">
+                <img class="thumb" src="images/main_hk.jpg" alt="The Hayseed Knight">
+            </a>
+            <a href="https://youtu.be/njcydQCuUR8">
+                <img class="thumb" src="images/main_m.jpg" alt="Doctor Menace">
+            </a>
+            <a href="https://youtu.be/96lXEd4DZAw">
+                <img class="thumb" src="images/main_dk.jpg" alt="Dreamkeepers">
+            </a>
+        </div>
         </div>
     </div>
+    <br>
     
 
 </body>
-
 </html>
