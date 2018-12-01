@@ -77,7 +77,7 @@ ul.sidenav {
     background-color: #8b9aa8;
     position: fixed;
     height: 100%;
-    overflow: auto;
+	overflow: hidden;
 
     box-shadow: 0px 0px 16px;
 
@@ -110,7 +110,6 @@ div.content {
 	width: 80%;
     font-family:'Poor Story', cursive;
 	/* overflow-y: auto; */
-	overflow-x: hidden;
 }
 
 /* Line Split--------------------------------------------------------------------------- */
