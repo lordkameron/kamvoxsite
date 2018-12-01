@@ -123,7 +123,7 @@ hr.main {
 }
 
 /* Tablet Size---------------------------------------------------------------------------- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     ul.sidenav {
         width: 100%;
         height: auto;
@@ -146,6 +146,9 @@ hr.main {
 
 /* Phone Size--------------------------------------------------------------------------------- */
 @media screen and (max-width: 400px) {
+	html {
+		overflow-x: hidden;
+	}
     ul.sidenav li a {
         text-align: center;
         float: none;
