@@ -46,9 +46,8 @@ p {
 }
 
 .parallax {
-	height: auto;
-	width: auto;
-	background-color: red;
+	height: 100%;
+	width: 80;
 	
 	background-attachment: fixed;
 	background-position: center;
@@ -57,10 +56,14 @@ p {
 	text-align: center;
 }
 .parcont { /* parallax container */
-	margin: 0 14% 0 14%; /* Top&Bottom Left&Right */
+	/* margin: 0 14% 0 14%;  Top Left Bottom Right */
 	padding: 48px;
 	background: rgb(224, 224, 224, 0.9);
-	border-radius: 20%;
+	
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
 }
 	
 /* Buttons----------------------------------------------------------------------------- */
@@ -151,6 +154,9 @@ hr {
 		margin-left: 0;
 		width: 100%;
 	}
+	.parallax {
+        background-attachment: scroll;
+    }
 }
 
 /* Phone Size--------------------------------------------------------------------------------- */
