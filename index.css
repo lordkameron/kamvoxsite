@@ -46,8 +46,8 @@ p {
 }
 
 .parallax {
-	height: 500px;
-	width: 80;
+	height: 100%;
+    width: 100%;
 	
 	background-attachment: fixed;
 	background-position: center;
@@ -134,13 +134,13 @@ hr {
 }
 
 /* Tablet Size---------------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
 	.parcont {
 		background: rgb(224, 224, 224, 1);
 		padding: 12px;
 		top: 50%;
 		left: 50%;
-	}
+    }
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -169,10 +169,10 @@ hr {
 	}
 	.parallax {
         background-attachment: scroll;
-		background-size: cover;
     }
 	.parcont {
-		background: rgb(224, 224, 224, 1);
+        background: rgb(224, 224, 224, 1);
+        opacity: 100%;
 		padding: 8px;
 		top: 50%;
 		left: 50%;
