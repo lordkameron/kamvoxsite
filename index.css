@@ -57,6 +57,7 @@ p {
 }
 .parcont { /* parallax container */
 	display: inline-block;
+
 	padding: 48px;
 	background: rgb(224, 224, 224, 0.9);
 	
@@ -158,6 +159,9 @@ hr {
 	.parallax {
         background-attachment: scroll;
     }
+	.parcont {
+		background: rgb(224, 224, 224, 1);
+	}
 }
 
 /* Phone Size--------------------------------------------------------------------------------- */
@@ -182,9 +186,5 @@ hr {
 	}
 	.topper {
     word-spacing: -14px;
-	}
-	div.content {
-		margin-left: 0;
-		width: 100%;
 	}
 }
