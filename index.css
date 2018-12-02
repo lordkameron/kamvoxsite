@@ -10,6 +10,7 @@ div {
 
 p {
     font-size: 20px;
+	font-family: "Arial";
 }
 
 /* Custom Classes---------------------------------------------------------------- */
@@ -45,15 +46,23 @@ p {
 }
 
 .parallax {
-	height: 1000px;
+	height: auto;
+	width: auto;
 	background-color: red;
 	
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	text-align: center;
 }
-
+.parcont { /* parallax container */
+	margin: 0 14% 0 14%; /* Top&Bottom Left&Right */
+	padding: 48px;
+	background: rgb(224, 224, 224, 0.9);
+	border-radius: 20%;
+}
+	
 /* Buttons----------------------------------------------------------------------------- */
 .btn {
     border: none;
@@ -117,9 +126,6 @@ hr {
     border: 2px solid #ffffff;
 	height: 0;	
 	width: 80%;
-}
-hr.main {
-	
 }
 
 /* Tablet Size---------------------------------------------------------------------------- */
