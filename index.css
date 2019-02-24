@@ -29,6 +29,12 @@ img.menuBut {
     font-family: 'PT Sans Narrow', sans-serif;
 }
 
+.banner {
+    max-width: 600px;
+    width: 360px;
+    height: auto;
+}
+
 .botter {
     height: 100%;
     width: 100%;
@@ -120,6 +126,10 @@ img.menuBut {
 @media screen and (max-width: 1320px) {
     img.menuBut {
         width: 240px;
+    }
+
+    .banner {
+        width: 200px;
     }
 
     .contLeft {
