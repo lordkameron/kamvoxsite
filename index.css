@@ -25,6 +25,10 @@ img.menuBut {
     display: block;
 }
 
+img.showcase {
+    max-width: 100%;
+}
+
 /* This is the banner ontop of the website */
 .topper {
     height: 100px;
@@ -222,6 +226,10 @@ img.menuBut {
         font-size: 34px;
     }
 
+    img.showcase {
+        width: 200px;
+    }
+
 }
 @media screen and (max-width: 360px) {
     img.menuBut {
@@ -245,5 +253,9 @@ img.menuBut {
 
     .text {
         font-size: 24px;
+    }
+    
+    img.showcase {
+        display: none;
     }
 }
