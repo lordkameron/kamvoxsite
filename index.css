@@ -1,0 +1,288 @@
+/* Source Mods ----------------------------------------------------------------------------------- */
+body {
+    background-color: #211e1e;
+}
+
+a.title {
+    text-decoration: none;
+    color: #ededed;
+}
+
+h1.title {
+    font-size: 80px;
+}
+
+h3.sub {
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+img.menuBut {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+img.showcase {
+    max-width: 100%;
+}
+
+/* This is the banner ontop of the website */
+.topper {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: #ededed;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.banner {
+    max-width: 600px;
+    width: 360px;
+    height: auto;
+}
+/* Banner spread for bottom of site */
+.botter {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #252424;
+    margin-top: 14px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/* Slide in Overlay-------------------------------------------------------------------------------------*/
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.text {
+    color: #ededed;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 92px;
+}
+.container {
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+
+/* Menu Item Containers-------------------------------------------------------------------------------------*/
+/* Left column bar (Artwork/Visual) */
+.contLeft {
+    float: left; 
+    margin-left: 15%;
+    box-shadow: 0px 10px 40px #141010;
+
+    position: relative;
+}
+.contLeft a:hover {
+    box-shadow: 0px 10px 80px #862323;
+}
+.contLeft:hover .overlay {
+    height: 100%;
+}
+
+/* Middle column bar (About) */
+.contMid {
+    display: inline-block; 
+    margin:0 auto;
+    box-shadow: 0px 10px 40px #141010;
+
+    position: relative;
+}
+.contMid a:hover {
+    box-shadow: 0px 10px 80px #2f8623;
+}
+.contMid:hover .overlay {
+    height: 100%;
+}
+
+/* Right column bar (Voice) */
+.contRight {
+    float: right; 
+    margin-right: 15%;
+    box-shadow: 0px 10px 40px #141010;
+
+    position: relative;
+}
+.contRight a:hover {
+    box-shadow: 0px 10px 80px #233b86;
+}
+.contRight:hover .overlay {
+    height: 100%;
+}
+
+/* Content Presentation -------------------------------------------------------------------------------------- */
+.pres {
+    display: inline-table;
+    background-color: #ededed;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+}
+.presImg {
+    float: left;
+    max-width: 230px;
+    /* box-shadow: 5px 5px 40px #141010; */
+}
+.presCont {
+    color: #211e1e;
+    float: right;
+    max-width: 700px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.presButton {
+    border: none;
+    color: #ededed;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.presButton:hover {
+    background-color: inherit;
+    color: #211e1e;
+}
+
+/* Page Tabs ---------------------------------------------------------------------------------------------------- */
+.tab {
+    overflow: hidden;
+}
+.tablink {
+    background-color: #ededed;
+    float: left;
+    border: 1px solid #dddddd;
+    outline: none;
+    width: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: 0.1s;
+}
+.tablink:hover {
+    background-color: #cccccc;
+}
+.tablink.active {
+    background-color: #ffffff;
+}
+.tabcontent {
+    display: none;
+    height: 100%;
+}
+
+/* Smaller Size----------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 1320px) {
+    img.menuBut {
+        width: 240px;
+    }
+
+    .banner {
+        width: 200px;
+    }
+
+    .contLeft {
+        margin-left: 8%;
+    }
+
+    .contRight {
+        margin-right: 8%;
+    }
+
+    .text {
+        font-size: 74px;
+    }
+}
+@media screen and (max-width: 900px) {
+    img.menuBut {
+        width: 160px;
+    }
+
+    .contLeft {
+        margin-left: 6%;
+    }
+
+    .contRight {
+        margin-right: 6%;
+    }
+
+    .text {
+        font-size: 54px;
+    }
+}
+@media screen and (max-width: 580px) {
+    img.menuBut {
+        width: 100px;
+    }
+
+    .container {
+        padding-bottom: 10px;
+    }
+
+    .contLeft {
+        box-shadow: 0px 0px 20px #141010;
+    }
+    
+    .contMid {
+        box-shadow: 0px 0px 20px #141010;
+    }
+    .contRight {
+        box-shadow: 0px 0px 20px #141010;
+    }
+
+    .text {
+        font-size: 34px;
+    }
+
+    img.showcase {
+        width: 200px;
+    }
+
+}
+@media screen and (max-width: 360px) {
+    img.menuBut {
+        width: 80px;
+    }
+
+    .container {
+        padding-bottom: 10px;
+    }
+
+    .contLeft {
+        box-shadow: 0px 0px 20px #141010;
+    }
+    
+    .contMid {
+        box-shadow: 0px 0px 20px #141010;
+    }
+    .contRight {
+        box-shadow: 0px 0px 20px #141010;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+    
+    img.showcase {
+        display: none;
+    }
+}

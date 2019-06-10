@@ -6,6 +6,27 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
 </head>
+<script>
+    function openPage(pageName, element) {
+        //Hide tabcontent class elements
+        var i, tabcontent, tablink;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        //Show Tab Content
+        document.getElementById(pageName).style.display = "block";
+        //Get all elements with tablink and remove "active" class
+        tablink = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablink.length; i++) {
+            tablink[i].className = tablink[i].className.replace("active","");
+        }
+        //Show Current tab, add "active" class to the button
+        //evt.currentTarget.className += " active";
+
+    }
+    //document.getElementById("defaultOpen").click();
+</script>
     <!-- New Website Version. Lets do this! -->
 <body>
     
@@ -29,7 +50,12 @@
     <div class="container" id="main">
         <div class="pres">
             <h1 style="background-color:#233b86; color:#ededed">Kam's Voice Work</h1>
-            <table>
+            <div class="tab">
+                <button class="tablink" onclick="openPage('Commercial', this)" id="defaultOpen">Commercial</button>
+                <button class="tablink" onclick="openPage('Hobby', this)">Hobby</button>
+            </div>
+            <div id="Commercial" class="tabcontent">
+                <table>
                 <!-- The Hayseed Knight -->
                 <tr>
                     <td>
@@ -40,9 +66,10 @@
                         </div>
                     </td>
                     <td>
+                        
                         <div class="presCont">
                             <h2>The Hayseed Knight</h2>
-                            <h3 class="sub">Project Date: OnGoing</h3>
+                            <h3 class="sub">Project Date: On Going</h3>
                             <p>The Hayseed Knight is a plot driven fantasy comedy visual novel created by a single person that follows the adventures of Ader, the one eyed deer, while he desperately tries to stay on track to fulfill his dream: becoming a knight!</p>
                             <h3>Role: Elbar of Azkedaz</h3>
                             <h3>Audio Samples</h3>
@@ -118,8 +145,44 @@
                         </div>
                     </td>
                 </tr>
-            </table>
-            
+                </table>
+            </div>
+            <div id="Hobby" class="tabcontent">
+                <table>
+                <!-- Ghostbusters -->
+                <tr>
+                    <td>
+                        <div style="width:270px;height:330px;background-color: green" class="presIMG"></div>
+                    </td>
+                    <td>
+                        <div class="presCont">
+                            <h2>IDW Ghostbusters</h2>
+                            <h3 class="sub">Project Date: On Going</h3>
+                            <p>Get ready. This project was spearheaded by the fine folks at Starforce Media. This is a Motion Comic Adaptation of IDW's excellent Ghostbusters comic. Follow the infamous boys in grey as they take on increasingly powerful ghastly apparitions. From old to new, and even across the USA.</p>
+                            <h3>Role: Peter Venkman</h3>
+                            <h3>Time Stamped Links</h3>
+                            <p>Coming Soon</p>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Dreamkeepers -->
+                <tr>
+                    <td>
+                        <div style="width:270px;height:330px;background-color: brown" class="presIMG"></div>
+                    </td>
+                    <td>
+                        <div class="presCont">
+                            <h2>Dreamkeepers: The Movie</h2>
+                            <h3 class="sub">Project Date: September 24, 2017</h3>
+                            <p>This was an absolutely massive project. One of my first's. Story & Sound proudly presents a Motion Comic Adaptation of the world read graphic novel, "Dreamkeepers Volume 4: Descent to the Archives".</p>
+                            <h3>Role: Damon</h3>
+                            <h3>Time Stamped Links</h3>
+                            <p>Coming Soon</p>
+                        </div>
+                    </td>
+                </tr>
+                </table>
+            </div>
         </div>
     </div>
 </body>
