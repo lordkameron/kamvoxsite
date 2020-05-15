@@ -25,14 +25,6 @@ a:visited {
     text-decoration: none;
     color: white;
 }
-a:focus {
-    text-decoration: none;
-    color: white;
-}
-a:active {
-    text-decoration: none;
-    color: white;
-}
 h1.tabH1 {
     margin: 0rem;
     font-size: 3rem;
