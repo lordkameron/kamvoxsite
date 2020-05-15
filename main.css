@@ -12,6 +12,7 @@
 /* Source Mods ---------------------------------------------------------------------- */
 a {
     text-decoration: none;
+    color: white;
 }
 a:link {
     color: white;
@@ -19,6 +20,18 @@ a:link {
 }
 a:hover {
     color: lightgoldenrodyellow
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+a:focus {
+    text-decoration: none;
+    color: white;
+}
+a:active {
+    text-decoration: none;
+    color: white;
 }
 h1.tabH1 {
     margin: 0rem;
