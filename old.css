@@ -1,0 +1,341 @@
+/* This is the main CSS file for the website. */
+
+/* Variables ---------------------------------------------------------------------- */
+:root {
+    --tabSpace: 1rem;
+    --main-tab-min-height: 12rem;
+    --main-border-16: url("images/KVBorder16.png");
+    --main-border-8: url("images/KVBorder8.png");
+    --main-gradient: linear-gradient(0.45turn, #164271, #000000);
+}
+
+/* Source Mods ---------------------------------------------------------------------- */
+a {
+    text-decoration: none;
+    color: white;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: lightgoldenrodyellow
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+h1.tabH1 {
+    margin: 0rem;
+    font-size: 3rem;
+    width: 100%;
+    /* font-family: 'Press Start 2P', cursive; */
+}
+h1.title {
+    margin: 1rem;
+    font-size: 3rem;
+}
+h1.side {
+    margin: 1rem;
+}
+h2.tabH2 {
+    margin: 0rem;
+    font-size: 2rem;
+}
+img:hover {
+    box-shadow: 0rem 0rem 2rem lightgoldenrodyellow;
+}
+
+body {
+    background: black;
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    text-shadow: 1rem 1rem 2rem black;
+}
+
+/* Containers compose the framework for the website. The building blocks that everything else is put into. */
+.containerHead {
+    color: white;
+    width: 80%;
+    margin: 2rem;
+    padding-left: 2rem;
+    position: relative;
+    top: 1rem;
+    z-index: 1;
+
+    background-image: var(--main-gradient);
+    border: 10px solid transparent;
+    border-image-source: var(--main-border-16);
+    border-image-slice:27 27 27 27;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset:0px 0px 0px 0px;
+    border-image-repeat:stretch stretch;
+    border-radius: 2rem;
+}
+.containerIndex {
+    color: white;
+    text-align: center;
+    margin: 0rem;
+}
+.containerTab {
+    color: white;
+    width: 80%;
+    margin: 2rem;
+    padding-left: 2rem;
+    position: relative;
+    z-index: 0;
+    background-image: var(--main-gradient);
+    
+    border: 10px solid transparent;
+    border-image-source: var(--main-border-16);
+    border-image-slice:27 27 27 27;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset:0px 0px 0px 0px;
+    border-image-repeat:stretch stretch;
+    border-radius: 2rem;
+}
+.containerSidebar {
+    color: white;
+    width: 24%;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    padding-right: 2rem;
+}
+
+
+/* Project Tabs ------------------------------------------------------------------- */
+/* Tabs are long horizontal blocks that display the Projects I've worked on. */
+.tab {
+    margin-top: var(--tabSpace);
+    display: flex;
+}
+.tabContent-Img {
+    /* Boundary of the image */
+
+    
+}
+.tabChar {
+    border: 10px solid transparent;
+    border-image-source: var(--main-border-16);
+    border-image-slice:27 27 27 27;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset:0px 0px 0px 0px;
+    border-image-repeat:stretch stretch;
+    border-radius: 1rem;
+
+    max-width: 192px;
+}
+.tabContent-Info {
+    margin-left: var(--tabSpace);
+    width: 45%;
+}
+.tabContent-Sample {
+    /* margin-left: var(--tabSpace); */
+    width: 25%;
+
+}
+.tabContent-Blank {
+    width: 25%;
+
+}
+
+/* Sidebar ----------------------------------------------------------------------- */
+
+.sidebar {
+    border: 10px solid transparent;
+    border-image-source: var(--main-border-16);
+    border-image-slice:27 27 27 27;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset:0px 0px 0px 0px;
+    border-image-repeat:stretch stretch;
+    border-radius: 2rem;
+
+    background-image: var(--main-gradient);
+    
+    text-align: left;
+}
+
+.soclogo {
+    margin: 1rem;
+}
+
+/* Header ------------------------------------------------------------------------ */
+.header {
+    color: white;
+}
+
+/* Index ------------------------------------------------------------------------- */
+h1.indexTitleText {
+    font-size: 10rem;
+    position: absolute; 
+    top: 1rem; 
+    width: 100%;
+
+    opacity: 0;
+
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.indexImg {
+    top: 0rem;
+    width: 100%; 
+    position: relative;
+    opacity: 0;
+    z-index: -1;
+
+    animation-name: FadeIn;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+    animation-iteration-count: initial;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.indexImg:hover {
+    box-shadow: none;
+    text-decoration: none;
+}
+.indexFlashText {
+    text-align: center;
+    width: 100%;
+    top: 24rem;
+    position: absolute;
+    font-size: 4rem;
+    opacity: 0;
+
+    animation-name: FadeIn;
+    animation-duration: 2.2s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes FadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* Media Resize ------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+    h1.indexTitleText {
+        font-size: 6rem;
+        top: 2rem;
+    }
+    .indexFlashText {
+        top: 12rem;
+        font-size: 2rem;
+    }
+    
+    h1.tabH1 {
+        margin: 0rem;
+        font-size: 1rem;
+        width: 100%;
+        /* font-family: 'Press Start 2P', cursive; */
+    }
+    h1.title {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    h1.side {
+        margin: 0rem;
+        font-size: 1rem;
+    }
+    h2.tabH2 {
+        margin: 0rem;
+        font-size: 0.8rem;
+    }
+
+    .containerHead {
+        color: white;
+        width: 80%;
+        margin: 0rem;
+        padding-left: 0rem;
+        position: relative;
+        top: 1rem;
+        z-index: 1;
+    
+        background-image: var(--main-gradient);
+        border: 10px solid transparent;
+        border-image-source: var(--main-border-8);
+        border-image-slice:27 27 27 27;
+        border-image-width:20px 20px 20px 20px;
+        border-image-outset:0px 0px 0px 0px;
+        border-image-repeat:stretch stretch;
+        border-radius: 2rem;
+    }
+    .containerTab {
+        color: white;
+        width: 80%;
+        margin: 0rem;
+        padding-left: 0rem;
+        position: relative;
+        z-index: 0;
+        background-image: var(--main-gradient);
+        
+        border: 10px solid transparent;
+        border-image-source: var(--main-border-8);
+        border-image-slice:27 27 27 27;
+        border-image-width:20px 20px 20px 20px;
+        border-image-outset:0px 0px 0px 0px;
+        border-image-repeat:stretch stretch;
+        border-radius: 2rem;
+    }
+    .containerSidebar {
+        color: white;
+        width: 24%;
+        position: fixed;
+        right: 0;
+        z-index: 2;
+        padding-right: 1rem;
+    }
+    .tabChar {
+        border: 10px solid transparent;
+        border-image-source: var(--main-border-8);
+        border-image-slice:27 27 27 27;
+        border-image-width:20px 20px 20px 20px;
+        border-image-outset:0px 0px 0px 0px;
+        border-image-repeat:stretch stretch;
+        border-radius: 1rem;
+    
+        max-width: 96px;
+    }
+    .tabContent-Info {
+        margin-left: var(--tabSpace);
+        width: 45%;
+    }
+    .tabContent-Sample {
+        /* margin-left: var(--tabSpace); */
+        width: 25%;
+    
+    }
+    .tabContent-Blank {
+        width: 25%;
+    
+    }
+
+    .sidebar {
+        border: 10px solid transparent;
+        border-image-source: var(--main-border-8);
+        border-image-slice:27 27 27 27;
+        border-image-width:20px 20px 20px 20px;
+        border-image-outset:0px 0px 0px 0px;
+        border-image-repeat:stretch stretch;
+        border-radius: 1rem;
+    
+        background-image: var(--main-gradient);
+        
+        text-align: left;
+    }
+    
+    .soclogo {
+        margin: 1rem;
+    }
+
+}
+
