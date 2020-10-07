@@ -6,12 +6,6 @@ body {
 	color: #343a40;
 	font-family: 'Oswald', sans-serif;
 }
-hr {
-	border-width: 0;
-	height: 0.5rem;
-	background-color: #343a40;
-	width: auto;
-}
 h1.title {
 	font-size: 4rem;
 	float: none;
@@ -55,4 +49,19 @@ div.mainbody {
 div.title {
 	/* margin-top: 25%; */
 	margin-bottom: 25%;
+}
+div.quotebox {
+	border: 0.4rem solid;
+	padding: 0.5rem;
+	margin-left: 0.25rem;
+	margin-bottom:0.25rem;
+	max-width: 24rem;
+}
+div.quotebox b {
+	font-size: 2rem;
+	padding-right: 1rem;
+}
+div.quote {
+	padding-left: 2rem;
+	text-indent: 1rem;
 }
