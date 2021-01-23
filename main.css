@@ -6,6 +6,9 @@ body {
 	color: #343a40;
 	font-family: 'Oswald', sans-serif;
 }
+audio {
+	width: 18rem;
+}
 h1.title {
 	font-size: 4rem;
 	float: none;
@@ -48,13 +51,25 @@ div.mainbody {
 }
 div.title {
 	/* margin-top: 25%; */
-	margin-bottom: 25%;
+	margin-bottom: 8rem;
+}
+
+div.topshelf {
+	display: flex;
+}
+img.kamface {
+	width: 33%; 
+	float: left;
+}
+
+div.content {
+	padding-bottom: 0.25rem;
 }
 div.quotebox {
-	border: 0.4rem solid;
+	/* border: 0.4rem solid; */
 	padding: 0.5rem;
 	margin-left: 0.25rem;
-	margin-bottom:0.25rem;
+	margin-bottom: 0.25rem;
 	max-width: 24rem;
 }
 div.quotebox b {
@@ -64,4 +79,47 @@ div.quotebox b {
 div.quote {
 	padding-left: 2rem;
 	text-indent: 1rem;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+/* Media Resize ------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px) {
+	body {
+		font-size: 0.8rem;
+	}
+	audio{
+		max-width: 12rem;
+	}
+	img.icon {
+		display: none;
+	}
+	h1.title {
+		font-size: 3rem;
+	}
+	h2.subtitle {
+		font-size: 1.4rem;
+		margin-top: -2rem;
+	}
+	div.title {
+		margin-bottom: 2rem;
+	}
+	div.topshelf {
+		display: inline;
+	}
+	img.kamface {
+		float: none;
+		width: 40%;
+	}
+}
+@media screen and (max-width: 300px) {
+	body {
+		font-size: 0.6rem;
+	}
+	h1.title {
+		font-size: 2rem;
+	}
+	h2.subtitle {
+		font-size: 1rem;
+	}
 }
